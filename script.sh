@@ -1,4 +1,5 @@
 #! /bin/bash
+sudo chmod 777 /etc/elasticsearch/elasticsearch.yml
 sed -i 's/#cluster.name: .*/cluster.name: dataraf/' $2
 sed -i 's/#node.name: .*/node.name: '$1'/' $2
 sed -i 's/#network.host: .*/network.host: 0.0.0.0/' $2
